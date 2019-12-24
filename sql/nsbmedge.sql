@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 21, 2019 at 09:25 PM
+-- Generation Time: Dec 24, 2019 at 02:30 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -35,7 +35,7 @@ CREATE TABLE `foods` (
   `fid` int(4) NOT NULL,
   `fname` text NOT NULL,
   `fdescription` text NOT NULL,
-  `fimage` varchar(100) NOT NULL,
+  `fimage` longblob NOT NULL,
   `favailability` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -76,7 +76,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `foods`
 --
 ALTER TABLE `foods`
-  MODIFY `fid` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `fid` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `login`
