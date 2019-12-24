@@ -25,8 +25,9 @@
     
   //image file directory
   
+    $move=move_uploaded_file($_FILES["image"]["tmp_name"],"uploads/". $_FILES["image"]["name"]);			
+  
     
-    $target = "images/".basename($image);
   
     
     //insert query
@@ -41,7 +42,7 @@
     mysqli_query($db,$sql);
   
     
-    if(move_uploaded_file($_FILES['image']['tmp_name'],$target))
+    if($move)
   
     
     {
