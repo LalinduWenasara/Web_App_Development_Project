@@ -30,7 +30,7 @@ if (mysqli_num_rows($result) > 0)
    {
       echo "<tr>";
       echo "<td> " . $row["fid"]. " </td> <td> " . $row["fname"]. "</td> <td>  " . $row["fdescription"]. "</td>";
-      echo "<td> ";?> <img src="uploads/<?php echo $row['fimage']; ?>" width="100px" height="100px" style="border:1px solid #333333;">
+      echo "<td> ";?> <img src="uploads/<?php echo $row['fimage']; ?>" width="100px" height="100px" style="border:1px solid #333333;"><?php
 
    
   }
