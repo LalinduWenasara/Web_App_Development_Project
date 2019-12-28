@@ -13,11 +13,21 @@
 
 <div class="containermain">
 
-<div class="di1">
-  <h1 class="h11">EDGE</h1>
-  Our Keto menu offers satisfying, gluten-free dinners for making low-carb lifestyles less complicated. Get started now.
-  <h2 class="h12">blah blah blah</h2>
+<div class="container2">
+
 </div>
+<img src="images/unique1.jpg" class="topimg">
+<div class="di1" >
+</br>
+  <h1 class="h11">EDGE</h1>
+  Our edge menu offers satisfying, gluten-free dinners for making low-carb lifestyles less complicated. Get started now.
+</br>
+</br>
+  <h2 >Check out all our menus</h2>
+</br>
+</br>
+</div>
+
 
 
 <div class="divright2">
@@ -72,11 +82,12 @@ if (mysqli_num_rows($result) > 0)
   while($row = mysqli_fetch_assoc($result))
    {
       ?>
-      <tr >
-      <td colspan=2> 
+      <tr class="trclass1" >
+      <td > 
       <img src="uploads/<?php echo $row['fimage']; ?>"  class="img1">
+      </td ><td class="td22">
       <?php
-      echo "<td> " . $row["fname"]. "</td> <td>  " . $row["fdescription"]. "</td>";
+      echo " " . $row["fname"]. "</td> <td>  " . $row["fdescription"]. "</td>";
     
       echo "<td> " . $row["favailability"]. "</td> <td>  " . $row["price"]. "</td>";
       }
