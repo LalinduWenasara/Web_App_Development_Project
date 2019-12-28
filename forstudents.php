@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <body>
+<head>
+
+<link href="css/sty1.css" rel="stylesheet" type="text/css" >
+
+
+
+</head>
+<body>
+
+
+
+<div class="containermain">
+
+<div class="di1">
+  <h1 class="h11">EDGE</h1>
+  Our Keto menu offers satisfying, gluten-free dinners for making low-carb lifestyles less complicated. Get started now.
+  <h2 class="h12">blah blah blah</h2>
+</div>
+
+
+<div class="divright2">
+  eeeeeeee
+
+
+<div >
+   <img src="NSBM edge.png" alt="..." class="img2">
+   <div >
+    <h5>...</h5>
+    <p>...</p>
+   </div>
+</div>
+</div>
 <?php
   $servername="localhost";
   $susername="root";
@@ -12,23 +43,69 @@ $con = mysqli_connect("$servername", "$susername","$spassword", "$sdbname");
 if (!$con) {
   die("Connection failed: " . mysqli_connect_error());
 }
-$sql = "SELECT * FROM `foods`WHERE (`favailability`='1')";
+?>
+
+<div>
+
+</div>
+
+<table  class="table1">
+<tr>
+
+    </tr>
+    <tr>
+<td class="divright">
+sssssssss
+</td>
+<td>
+<?php
+$sql = "SELECT * FROM `foods`";
 $result = mysqli_query($con, $sql);
-echo "<table border=1>";
+?>
+
+<table border=1>
+
+ <?php
 if (mysqli_num_rows($result) > 0)
  {
   // output data of each row
   while($row = mysqli_fetch_assoc($result))
    {
-      echo "<tr>";
-      echo "<td> " . $row["fid"]. " </td> <td> " . $row["fname"]. "</td> <td>  " . $row["fdescription"]. "</td>";
-      echo "<td> ";?> <img src="uploads/<?php echo $row['fimage']; ?>" width="100px" height="100px" style="border:1px solid #333333;"><?php
-   
+      ?>
+      <tr >
+      <td colspan=2> 
+      <img src="uploads/<?php echo $row['fimage']; ?>"  class="img1">
+      <?php
+      echo "<td> " . $row["fname"]. "</td> <td>  " . $row["fdescription"]. "</td>";
+    
+      echo "<td> " . $row["favailability"]. "</td> <td>  " . $row["price"]. "</td>";
+      }
+      echo "<tr >";
+      echo "</br>";
+
   }
-} else {
+
+
+
+
+
+ 
+
+else {
   echo "0 results";
 }
 mysqli_close($con);
 ?>
+</td>
+    </tr>
+    </table>
+
+
+</div>
+
+
+<script src="js/myScript1.js">
+</script>
+
 </body>
 </html>

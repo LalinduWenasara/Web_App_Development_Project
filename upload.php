@@ -21,7 +21,12 @@
     $fname= $_POST['fname'];
     $fdescription= $_POST['fdescription'];
     $favailability= $_POST['favailability'];
-  
+    $checkbox1=$_POST['time']; 
+    $chk="";
+    foreach($checkbox1 as $chk1)  
+       {  
+          $chk .= $chk1.+",";  
+       }  
     
   //image file directory
   
@@ -33,7 +38,7 @@
     //insert query
   
     
-    $sql = "INSERT INTO foods(fimage,fname,fdescription,favailability) values ('$image','$fname','$fdescription','$favailability')";
+    $sql = "INSERT INTO foods(fimage,fname,fdescription,favailability) values ('$image','$fname','$fdescription','$chk')";
   
     
     //excute query
@@ -81,7 +86,26 @@ description
 photo
 <input type="file" name="image"> <br>
 availability
-<input type="text" name="favailability"> <br>
+<table border="1">  
+   <tr>  
+      <td colspan="2">Select available times:</td>  
+   </tr>  
+   <tr>  
+      <td>breakfast</td>  
+      <td><input type="checkbox" name="time[]" value="breakfast"></td>  
+   </tr>  
+   <tr>  
+      <td>lunch</td>  
+      <td><input type="checkbox" name="time[]" value="lunch"></td>  
+   </tr>  
+   <tr>  
+      <td>dinner</td>  
+      <td><input type="checkbox" name="time[]" value="dinner"></td>  
+   </tr>  
+
+      <td colspan="2" align="center">
+
+  </table>
 <button type="submit" name="submit">POST</button>
 
 
