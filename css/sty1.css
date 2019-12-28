@@ -17,11 +17,10 @@ body{
      
    }
    .img1 {
-      position: relative;
-      margin-left:40%;
-      float: center;
+      
+      margin-left:10%;
       border-radius: 10%;
-      background-position: 50% 50%;
+      background-position: 50%;
       background-repeat:   no-repeat;
       background-size:     cover;
       text-align: center;
@@ -53,7 +52,7 @@ position: absolute;
   }
 
   .divright{
-    background-color: chartreuse;
+    background-color: yellow;
     width:30%;
 
   }
@@ -110,4 +109,8 @@ border-right-width: 10px;
   }
 .td22{
   background-color: lawngreen;
+}
+.menutd1{
+  width: 20%;
+
 }

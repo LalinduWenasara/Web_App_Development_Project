@@ -83,11 +83,11 @@ if (mysqli_num_rows($result) > 0)
    {
       ?>
       <tr class="trclass1" >
-      <td > 
+      <td class="menutd1" > 
       <img src="uploads/<?php echo $row['fimage']; ?>"  class="img1">
       </td ><td class="td22">
       <?php
-      echo " " . $row["fname"]. "</td> <td>  " . $row["fdescription"]. "</td>";
+      echo " " . $row["fname"]. "</td> <td class="menutd2">  " . $row["fdescription"]. "</td>";
     
       echo "<td> " . $row["favailability"]. "</td> <td>  " . $row["price"]. "</td>";
       }
