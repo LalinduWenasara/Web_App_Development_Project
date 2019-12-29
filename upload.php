@@ -21,7 +21,7 @@
     $fname= $_POST['fname'];
     $fdescription= $_POST['fdescription'];
     $price= $_POST['price'];
-    $checkbox1=$_POST['time1']+$_POST['time1']+$_POST['time1'];
+    $checkbox1=$_POST['time'];
   //image file directory
   
     $move=move_uploaded_file($_FILES["image"]["tmp_name"],"uploads/". $_FILES["image"]["name"]);			
@@ -88,15 +88,15 @@ availability
    </tr>  
    <tr>  
       <td>breakfast</td>  
-      <td><input type="checkbox" name="time1[]" value="breakfast"></td>  
+      <td><input type="checkbox" name="time[]" value="breakfast"></td>  
    </tr>  
    <tr>  
       <td>lunch</td>  
-      <td><input type="checkbox" name="time2[]" value="lunch"></td>  
+      <td><input type="checkbox" name="time[]" value="lunch"></td>  
    </tr>  
    <tr>  
       <td>dinner</td>  
-      <td><input type="checkbox" name="time3[]" value="dinner"></td>  
+      <td><input type="checkbox" name="time[]" value="dinner"></td>  
    </tr>  
 
       <td colspan="2" align="center">
