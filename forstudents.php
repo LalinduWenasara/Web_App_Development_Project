@@ -9,39 +9,42 @@
 </head>
 <body>
 
+<div>
+<ul>
+  <li><a href="#about">About</a></li>
+  <li><a href="#login">login</a></li>
+</ul>
+</div>
+
+
 
 
 <div class="containermain">
 
-<div class="container2">
 
-</div>
 <img src="images/unique1.jpg" class="topimg">
-<div class="di1" >
-</br>
-  <h1 class="h11">EDGE</h1>
-  Our edge menu offers satisfying, gluten-free dinners for making low-carb lifestyles less complicated. Get started now.
-</br>
-</br>
-  <h2 >Check out all our menus</h2>
-</br>
-</br>
-</div>
+     <div class="di1" >
+       </br>
+    <h1 class="h11">EDGE</h1>
+      Our edge menu offers satisfying, gluten-free dinners for making low-carb lifestyles less complicated. Get started now.
+                                                                                                          </br>
+                                                                                                           </br>
+    <h2 >Check out all our menus</h2>
+                                                                                                           </br>
+                                                                                                           </br>
+    </div>
 
 
 
-<div class="divright2">
-  eeeeeeee
 
-
-<div >
+    <div >
    <img src="NSBM edge.png" alt="..." class="img2">
    <div >
     <h5>...</h5>
     <p>...</p>
    </div>
-</div>
-</div>
+
+
 <?php
   $servername="localhost";
   $susername="root";
@@ -55,9 +58,7 @@ if (!$con) {
 }
 ?>
 
-<div>
 
-</div>
 
 <table  class="table1">
 <tr>
@@ -110,6 +111,10 @@ mysqli_close($con);
 
 
 </div>
+
+
+
+
 
 
 <script src="js/myScript1.js">
