@@ -73,7 +73,7 @@ $sql = "SELECT * FROM `foods`";
 $result = mysqli_query($con, $sql);
 ?>
 
-<table border=1>
+<table >
 
  <?php
 if (mysqli_num_rows($result) > 0)
@@ -82,6 +82,7 @@ if (mysqli_num_rows($result) > 0)
   while($row = mysqli_fetch_assoc($result))
    {
       ?>
+      
       <tr class="trclass1" >
       <td class="menutd1" > 
       <img src="uploads/<?php echo $row['fimage']; ?>"  class="img1">
@@ -91,24 +92,20 @@ if (mysqli_num_rows($result) > 0)
     
       echo "<td> " . $row["favailability"]. "</td> <td>  " . $row["price"]. "</td>";
       }
-      echo "<tr >";
-      echo "</br>";
-
+      echo "<tr ></br>";
+    
+      
   }
 
-
-
-
-
- 
-
-else {
+else
+ {
   echo "0 results";
 }
 mysqli_close($con);
 ?>
-</td>
+
     </tr>
+
     </table>
 
 

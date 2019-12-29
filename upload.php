@@ -22,6 +22,7 @@
     $fdescription= $_POST['fdescription'];
     $price= $_POST['price'];
     $checkbox1=$_POST['time'];
+    $time=implode(",", $checkbox1);
   //image file directory
   
     $move=move_uploaded_file($_FILES["image"]["tmp_name"],"uploads/". $_FILES["image"]["name"]);			
@@ -32,7 +33,7 @@
     //insert query
   
     
-    $sql = "INSERT INTO foods(fimage,fname,fdescription,favailability,price) values ('$image','$fname','$fdescription','$checkbox1','$price')";
+    $sql = "INSERT INTO foods(fimage,fname,fdescription,favailability,price) values ('$image','$fname','$fdescription','$time','$price')";
   
     
     //excute query
