@@ -84,14 +84,24 @@ if (mysqli_num_rows($result) > 0)
    {
       ?>
       
-      <tr class="trclass1" >
+      <tr class="trclass1" id="zoom" >
       <td class="menutd1" > 
       <img src="uploads/<?php echo $row['fimage']; ?>"  class="img1">
-      </td ><td class="td22">
+      </td >
+      <td class="td22">
       <?php
-      echo " " . $row["fname"]. "</td> <td >  " . $row["fdescription"]. "</td>";
-    
-      echo "<td> " . $row["favailability"]. "</td> <td>  " . $row["price"]. "</td>";
+      echo $row["fname"]; ?>
+      </td>
+       <td class="td23" >  
+      <?php
+      echo $row["fdescription"]. "</td>"; ?>
+      <td class="td24"> 
+      <?php
+      echo  $row["favailability"]; ?>
+      </td> 
+      <td class="td25">
+      <?php
+      echo  $row["price"]. "lkr</td>";
       }
       echo "<tr ></br>";
     

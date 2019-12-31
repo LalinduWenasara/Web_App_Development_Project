@@ -1,0 +1,41 @@
+
+.d2{
+    background-color: aqua;
+    float: inline-start;
+}
+
+
+
+
+/*nav bar things*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+  }
+  
+  li {
+    float:right;
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color:greenyellow;
+  }
+  
+  
+  /* nav bar css over*/
+  
+  .all{
+      background-color: ivory;
+  }
+
+

@@ -22,8 +22,8 @@
       background-repeat:   no-repeat;
       background-size:     cover;
       text-align: center;
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
       object-fit: cover;
   }
   .rr{
@@ -101,23 +101,93 @@ border-right-width: 10px;
 
 text-align: center;
   }
-.td22{
- font-size: xx-large;
-}
+
+
 .menutd1{
   width: 20%;
 
 }
+
 table {
   border-collapse: collapse;
   width: 100%;
 }
 
+
+
+
+
+
+/*table css*/
+
+
+
 th, td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+  border-radius: 2%;
 }
+
+.td22{
+ 
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+  text-align: left;
+ }
+.td23{
+  
+  
+  padding: 5px;
+  text-align: left;
+
+}
+.td24{
+  
+  
+  padding: 5px;
+  text-align: left;
+}
+.td25{
+  padding-bottom: 60px;
+  font-weight: bold;
+  
+  text-align: right;
+}
+
+#zoom{
+  -ms-transform: scale(0.9); 
+  -webkit-transform: scale(0.9); 
+  transform: scale(0.9);
+ 
+}
+
+
+#zoom:hover {
+  -ms-transform: scale(1.02); 
+  -webkit-transform: scale(1.02); 
+  transform: scale(1);
+  background-color: rgb(196, 255, 194);
+  border-color: lawngreen;
+  box-shadow: lawngreen;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -139,7 +209,7 @@ th, td {
 
 /*nav bar things*/
 ul {
-  
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;

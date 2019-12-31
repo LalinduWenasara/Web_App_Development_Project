@@ -1,3 +1,24 @@
+<html>
+    <head>
+
+
+<link href="css/sty2.css" rel="stylesheet" type="text/css" >
+
+    </head>
+   
+<body>
+
+
+
+    <div>
+<ul>
+  <li><a href="#about">About</a></li>
+  <li><a href="#login">login</a></li>
+</ul>
+</div>
+
+<div class="all">
+
 <?php
 
   $servername="localhost";
@@ -65,25 +86,36 @@
 
 
 ?>
-<html>
-    <head>
 
 
 
 
-    </head>
-    <body>
+<div class="d1">
+  <h1>add items</h1>
+</div>
+
+<div class="div2">
         <form action="upload.php" method="POST" enctype="multipart/form-data">
-name          
-<input type="text" name="fname"> <br>
-price
-<input type="text" name="price"> <br>
-description
-<input type="text" name="fdescription"> <br>
-photo
-<input type="file" name="image"> <br>
-availability
-<table >  
+
+
+  <table >  
+  
+  <tr>  
+     <td>name</td>  
+     <td><input type="text" name="fname"></td>  
+  </tr>  
+  <tr>  
+     <td>price</td>  
+     <td><input type="text" name="price"></td>  
+  </tr>  
+  <tr>  
+     <td>description</td>  
+     <td><input type="text" name="fdescription"></td>  
+  </tr>  
+  <tr>  
+     <td>photo</td>  
+     <td><input type="file" name="image"> <br></td>  
+  </tr>  
    <tr>  
       <td colspan="2">Select available times:</td>  
    </tr>  
@@ -103,9 +135,11 @@ availability
       <td colspan="2" align="center">
 
   </table>
-<button type="submit" name="submit">POST</button>
+<button type="submit" name="submit">add</button>
 
 
         </form>
+  </div>
+  </div>
     </body>
 </html>
