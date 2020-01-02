@@ -66,7 +66,14 @@ if (!$con) {
     </tr>
     <tr>
 <td class="divright">
-sssssssss
+
+
+<div  style="max-width:500px">
+  <img class="mySlides" src="NSBM edge.png" style="width:100%" >
+  <img class="mySlides" src="images/unique2.jpg" style="width:100%">
+</div>
+
+
 </td>
 <td>
 <?php
@@ -122,12 +129,27 @@ mysqli_close($con);
 
 </div>
 
+<div>
+  <!--footer-->
+</div>
 
+<script>
 
+var myIndex = 0;
+carousel();
 
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 
-
-<script src="js/myScript1.js">
 </script>
 
 </body>
