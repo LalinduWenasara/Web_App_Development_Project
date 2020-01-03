@@ -36,15 +36,6 @@
 
 
 
-
-    <div >
-   <img src="NSBM edge.png" alt="..." class="img2">
-   <div >
-    <h5>...</h5>
-    <p>...</p>
-   </div>
-
-
 <?php
   $servername="localhost";
   $susername="root";
@@ -68,8 +59,9 @@ if (!$con) {
 <td class="divright">
 
 
+
 <div  style="max-width:500px">
-  <img class="mySlides" src="NSBM edge.png" style="width:100%" >
+  <img class="mySlides" src="images/unique3.jpg" style="width:100%" >
   <img class="mySlides" src="images/unique2.jpg" style="width:100%">
 </div>
 
