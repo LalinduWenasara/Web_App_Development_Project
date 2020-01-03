@@ -1,3 +1,6 @@
+body{
+  font-family: sofia-pro,Helvetica Neue,Arial,sans-serif;
+}
 
 .img2{
     
@@ -177,11 +180,14 @@ th, td {
 .mySlides {display:none;
   object-fit: cover;
   width: 100%;
-  height: 1500px;
+  height: 1280px;
   object-fit: cover;
   text-align: justify;
   
 }
+
+
+
 
 
 

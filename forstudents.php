@@ -61,8 +61,17 @@ if (!$con) {
 
 
 <div  style="max-width:500px">
-  <img class="mySlides" src="images/unique3.jpg" style="width:100%" >
-  <img class="mySlides" src="images/unique2.jpg" style="width:100%">
+
+   
+   <img class="mySlides" src="images/unique3.jpg" style="width:100%" >
+   <img class="mySlides" src="images/unique4.jpg" style="width:100%">
+   <img class="mySlides" src="images/unique5.jpg" style="width:100%" >
+   <img class="mySlides" src="images/unique6.jpg" style="width:100%" >
+     
+       
+
+
+  
 </div>
 
 
@@ -125,6 +134,14 @@ mysqli_close($con);
   <!--footer-->
 </div>
 
+
+
+
+
+
+
+
+
 <script>
 
 var myIndex = 0;
@@ -139,10 +156,19 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+  setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
 </script>
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
